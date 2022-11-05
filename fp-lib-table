@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "Connector_TE_AMP_HD15")(type "KiCad")(uri "${KIPRJMOD}/Connector_TE_AMP_HD15.pretty")(options "")(descr ""))
+  (lib (name "CUI_SDS_80J")(type "KiCad")(uri "${KIPRJMOD}/CUI_SDS_80J.pretty")(options "")(descr ""))
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "${KIPRJMOD}/RP2040/MCU_RaspberryPi_and_Boards.pretty")(options "")(descr ""))
+)

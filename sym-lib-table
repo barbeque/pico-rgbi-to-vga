@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "SDS-80J")(type "Legacy")(uri "${KIPRJMOD}/CUI_SDS_80J.pretty/SDS-80J.lib")(options "")(descr ""))
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "Legacy")(uri "${KIPRJMOD}/RP2040/MCU_RaspberryPi_and_Boards.lib")(options "")(descr ""))
+)
