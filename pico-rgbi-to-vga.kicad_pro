@@ -379,6 +379,7 @@
         "microvia_drill": 0.1,
         "name": "power",
         "nets": [
+          "+3V3",
           "+5V",
           "GND",
           "Net-(D1-Pad2)"
