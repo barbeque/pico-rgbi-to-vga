@@ -2257,7 +2257,7 @@
   (symbol (lib_id "power:GND") (at 120.65 158.115 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 299a2b70-4a8f-4ddd-803b-9f2688cbf498)
-    (property "Reference" "#PWR?" (id 0) (at 120.65 164.465 0)
+    (property "Reference" "#PWR0116" (id 0) (at 120.65 164.465 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 120.65 162.56 0))
@@ -2351,7 +2351,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 133.35 154.305 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 3ebb7414-8370-4606-bcb1-2b26f5893364)
-    (property "Reference" "SW?" (id 0) (at 133.35 146.685 0))
+    (property "Reference" "SW1" (id 0) (at 133.35 146.685 0))
     (property "Value" "SW_Push" (id 1) (at 133.35 149.225 0))
     (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (id 2) (at 133.35 149.225 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2967,7 +2967,7 @@
       (reference "#PWR0115") (unit 1) (value "+3.3V") (footprint "")
     )
     (path "/299a2b70-4a8f-4ddd-803b-9f2688cbf498"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0116") (unit 1) (value "GND") (footprint "")
     )
     (path "/e74ce1bf-af97-407b-b11d-d350e934d692"
       (reference "D1") (unit 1) (value "LED") (footprint "LED_THT:LED_D3.0mm")
@@ -3048,7 +3048,7 @@
       (reference "RN1") (unit 1) (value "20kΩ") (footprint "Resistor_THT:R_Array_SIP7")
     )
     (path "/3ebb7414-8370-4606-bcb1-2b26f5893364"
-      (reference "SW?") (unit 1) (value "SW_Push") (footprint "Button_Switch_THT:SW_PUSH_6mm")
+      (reference "SW1") (unit 1) (value "SW_Push") (footprint "Button_Switch_THT:SW_PUSH_6mm")
     )
     (path "/2674e903-9fe3-4a69-b6af-9ed5ebc97bf1"
       (reference "U1") (unit 1) (value "Pico") (footprint "MCU_RaspberryPi_and_Boards:RPi_Pico_SMD_TH")
