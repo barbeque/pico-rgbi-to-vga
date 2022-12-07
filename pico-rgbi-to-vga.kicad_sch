@@ -1185,7 +1185,6 @@
     )
   )
 
-
   (junction (at 120.65 77.47) (diameter 0) (color 0 0 0 0)
     (uuid 00a61b4e-c1e6-49ed-bcc5-97f23473f0cd)
   )
@@ -1816,6 +1815,11 @@
     (uuid ff7a6c27-eee3-44e2-8bca-48c23101ca29)
   )
 
+  (text "TODO: Should we think about amplification? What is the source current of VGA"
+    (at 206.375 83.82 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 4fb0e04e-2e86-4a66-af42-c7ef807978e8)
+  )
   (text "3.3v to 0.7v divider:\nr1 = 8.2kΩ\nr2 = 2.2kΩ" (at 66.675 46.355 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 52edc64f-a27d-491c-a230-cc98942b15c6)
@@ -1827,6 +1831,11 @@
   (text "VSYNC?" (at 222.885 128.27 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 84786643-4c44-418d-9d62-1c6b9c914ca9)
+  )
+  (text "note dec 2022: could also use 15k, 22k if those are easier to get in RN\n10k/22k is RIGHT on the dot of 3.33v so might not be appreciated by the pico\nif input voltage is actually like 5.25v or something\n\nswitching level on the rpi pico is officially 3.15v to 3.465v,\nbut these guys think it's > 2.35v from constituent datasheets:\nhttp://www.mosaic-industries.com/embedded-systems/microcontroller-projects/raspberry-pi/gpio-pin-electrical-specifications\n\ndec 8, 2022: changed to 15k so 5.5V becomes 3.3V and 5.0V becomes 3.0V... good enough"
+    (at 16.51 178.435 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 8e0527a1-64cc-4c21-af5a-5910f4c387cc)
   )
   (text "todo: add level shifter to raise 3.3v H/V sync to VGA TTL"
     (at 56.515 61.595 0)
@@ -2588,13 +2597,16 @@
     (property "Reference" "RN1" (id 0) (at 74.93 149.6059 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "20kΩ" (id 1) (at 74.93 152.1459 0)
+    (property "Value" "15kΩ" (id 1) (at 74.93 152.1459 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistor_THT:R_Array_SIP7" (id 2) (at 54.61 151.13 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf" (id 3) (at 64.135 151.13 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Mouser" "652-4607X-1LF-22K" (id 5) (at 64.135 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f084be43-55f5-4dd7-b69f-3daa949cc8b1))
@@ -2812,7 +2824,7 @@
       (reference "R16") (unit 1) (value "100Ω") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/dcda6a74-0460-40e6-8ee3-a792f5780acc"
-      (reference "RN1") (unit 1) (value "20kΩ") (footprint "Resistor_THT:R_Array_SIP7")
+      (reference "RN1") (unit 1) (value "15kΩ") (footprint "Resistor_THT:R_Array_SIP7")
     )
     (path "/3ebb7414-8370-4606-bcb1-2b26f5893364"
       (reference "SW1") (unit 1) (value "SW_Push") (footprint "Button_Switch_THT:SW_PUSH_6mm")
