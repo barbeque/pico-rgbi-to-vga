@@ -1,0 +1,6 @@
+*.elf
+*.cmake
+CMakeCache*
+CMakeFiles
+Makefile
+*.uf2
