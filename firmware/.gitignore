@@ -7,3 +7,8 @@ CMakeCache*
 CMakeFiles
 Makefile
 *.uf2
+pioasm
+*.bin
+*.dis
+*.map
+*.hex
