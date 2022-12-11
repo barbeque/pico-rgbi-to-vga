@@ -9,8 +9,8 @@
 //                                   Includes
 // ----------------------------------------------------------------------------
 
-#include "../../global.h"	// global common definitions
-#include "../vga.pio.h"		// VGA PIO compilation
+#include "vendor/picovga/global.h"	// global common definitions
+#include "generated/vga.pio.h"	// VGA PIO compilation
 
 typedef float real;
 

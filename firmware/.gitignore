@@ -1,4 +1,7 @@
 *.elf
+elf2uf2
+build
+pico-sdk
 *.cmake
 CMakeCache*
 CMakeFiles
