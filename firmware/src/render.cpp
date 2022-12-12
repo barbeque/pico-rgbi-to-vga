@@ -20,7 +20,7 @@ Sphere Spheres[] = {
 V3 Camera(0, 0, 10);		// camera position
 V3 Light(-6, 4, 10);		// light position
 real Ambient = (real)0.3;	// intensity of ambient light
-V3 BackCol((real)0.4, (real)0.6, 1); // background color in horizon
+V3 BackCol((real)1.0, (real)0, (real)0.5); // background color in horizon
 
 #define TOOFAR 1e10
 #define FLOORY -2			// floor Y position
