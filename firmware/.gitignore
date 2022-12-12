@@ -8,6 +8,7 @@ CMakeFiles
 Makefile
 *.uf2
 pioasm
+generated/pico_base
 *.bin
 *.dis
 *.map
