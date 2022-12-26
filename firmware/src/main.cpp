@@ -9,30 +9,30 @@
 
 // Draw box
 u8 Box[WIDTHBYTE*HEIGHT] __attribute__ ((aligned(4)));
-/*
-// initialize videomode
-void VideoInit()
-{
-	// setup videomode
-	VgaCfgDef(&Cfg); // get default configuration
-	Cfg.video = &DRV; // video timings
-	Cfg.width = WIDTH; // screen width
-	Cfg.height = HEIGHT; // screen height
-	VgaCfg(&Cfg, &Vmode); // calculate videomode setup
 
-	// initialize base layer 0
-	ScreenClear(pScreen);
-	sStrip* t = ScreenAddStrip(pScreen, HEIGHT);
-	sSegm* g = ScreenAddSegm(t, WIDTH);
-	ScreenSegmGraph8(g, Box, WIDTHBYTE);
+void SketchyDraw() {
+	u8* dest = &Box[0];
+	int red = 0;
+	int green = 0;
+	int blue = 0;
+	// Just a demo program to see if I can figure out
+	// how to draw to a frame buffer
 
-	// initialize system clock
-	set_sys_clock_pll(Vmode.vco*1000, Vmode.pd1, Vmode.pd2);
+	for(int y = HEIGHT - 1; y >= 0; --y) {
+		for(int x = 0; x < WIDTH; ++x) {
+			if(y < 5 || y > HEIGHT - 5 || x < 5 || x > WIDTH - 5) {
+				red = green = blue = 255;
+			}
+			else {
+				red = 0;
+				green = 0;
+				blue = 0;
+			}
 
-	// initialize videomode
-	VgaInitReq(&Vmode);
+			*dest++ = (u8)((red & 0xe0) | ((green & 0xe0) >> 3) | (blue >> 6));
+		}
+	}
 }
-*/
 
 int main()
 {
@@ -40,17 +40,14 @@ int main()
 //	multicore_launch_core1(VgaCore);
 
 	// initialize videomode
-//	VideoInit();
-	Video(DEV_VGA, RES_EGA, FORM_8BIT, Box);
 
-	// render image fast
-//	Render3DFast();
+	// RES_EGA - 528x400 (really 512x400, it seems)
+	// RES_VGA - 640x480
+	// RES_CGA - 320x200
 
-	// render image without antialiasing
-	Render3D(False);
+	Video(DEV_VGA, RES_CGA, FORM_8BIT, Box);
 
-	// render image with antialiasing
-	Render3D(True);
+	SketchyDraw();
 
 	// main loop
 	while (true)

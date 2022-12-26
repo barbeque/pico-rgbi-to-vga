@@ -1,4 +1,5 @@
 *.elf
+.vscode
 elf2uf2
 build
 pico-sdk

@@ -14,7 +14,6 @@ pico_sdk_init()
 
 add_executable(rgbi
     ./src/main.cpp
-    ./src/render.cpp
     # ...PicoVGA files
     ${PICOVGA_SRC}/vga_blitkey.S
     ${PICOVGA_SRC}/vga_render.S
