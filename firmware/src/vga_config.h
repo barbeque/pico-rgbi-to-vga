@@ -6,7 +6,7 @@
 // ****************************************************************************
 
 // === Configuration
-#define LAYERS		4	// total layers 1..4 (1 base layer + 3 overlapped layers)
+#define LAYERS		1	// total layers 1..4 (1 base layer + 3 overlapped layers)
 #define SEGMAX		8	// max. number of video segment per video strip (size of 1 sSegm = 28 bytes)
 #define STRIPMAX	8	// max. number of video strips (size of 1 sStrip = sSegm size*SEGMAX+4 = 228 bytes)
 				// size of sScreen = sStrip size*STRIPMAX+4 = 1828 bytes
