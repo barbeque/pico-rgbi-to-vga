@@ -3,7 +3,10 @@ cmake_minimum_required(VERSION 3.13)
 # use PICO_SDK_PATH to import Pico SDK
 include($ENV{PICO_SDK_PATH}/pico_sdk_init.cmake)
 
-set(PICOVGA_PATH "/Users/mike/Code/PicoVGA")
+# locate PicoVGA
+if(NOT DEFINED PICOVGA_PATH)
+	set(PICOVGA_PATH "../../PicoVGA")
+endif()
 set(PICOVGA_SRC "${PICOVGA_PATH}/_picovga")
 
 project(rgbi C CXX ASM)
