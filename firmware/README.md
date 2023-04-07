@@ -6,3 +6,4 @@
  * Clone [PicoVGA source tree](https://github.com/Panda381/PicoVGA) and put it parallel to the `pico-rgbi-to-vga` checkout as `PicoVGA`, or set `PICOVGA_PATH` environment variable if you want to put it somewhere else
  * `cmake .` will generate a Makefile
  * `make` will use that Makefile to generate `rgbi.uf2`, if all went well
+ * Hold the button down on the Pico as you plug it into the USB port, then drag `rgbi.uf2` onto the Pico to flash it.

@@ -28,3 +28,10 @@ Here is a brief list of computers that are known to work with such a model, alth
  | Fujitsu FM-77AV2 | Custom cable required | Not tested; intensity may not be possible |
 
 Please submit a pull request if you have tested another computer, know of one to add to the list, or can contribute custom cable designs.
+
+## Build Instructions
+### Hardware
+TODO
+
+### Software
+Refer to [the `firmware` directory](firmware/)'s README for build instructions.
