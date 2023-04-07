@@ -1,6 +1,15 @@
 # Pico RGBI to VGA
 _(Name subject to change in future)_
 
+## Current Status
+Not working
+
+TODO:
+ - [ ] Hook up logic analyzer example to capture input video
+ - [ ] Buffer input video into output
+ - [ ] Test 4-bit colour output mode
+ - [ ] Create multiple palettes and palette switch handler
+
 ## The Problem
 Several old computers, such as the NEC PC-6001mkII, use an "RGB+I" output at TTL level (+5V.) It is becoming difficult to locate monitors which support this output. Modern displays, and I use the term loosely because the VGA port has virtually become extinct as I am writing this in 2022, use analogue RGB to convey a greater range of colours.
 
