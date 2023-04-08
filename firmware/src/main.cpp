@@ -36,14 +36,31 @@ void SketchyDraw() {
 
 int main()
 {
-	// run VGA core
-//	multicore_launch_core1(VgaCore);
+	// Set up input PIO.
 
+	// Input basic loop:
+	//	start capturing at vsync (+timing?)
+	//	start new line at hsync (+timing?)
+	//	loop at some fixed frequency to capture four pins (IBGR) 320 times
+	//	transfer those pins into the video buffer somehow?
+
+	// I have 66ms per line, so that means I need to sample one pixel every 0.2ish ms or 0.005MHz?
+
+	// Might need to set sm_config_set_clkdiv to slow the input SM clock relative to the VGA one
+
+	// It may have been a mistake to put intensity before HV RGB as PIO `in` captures a block at a time.
+	// Might want to bodge the hardware so it goes I, B, G, R, V, H even if it's more annoying to
+	// route - that way we can just grip and rip the first four pins
+
+	// run VGA core
 	// initialize videomode
 
 	// RES_EGA - 528x400 (really 512x400, it seems)
 	// RES_VGA - 640x480
 	// RES_CGA - 320x200
+
+	// TODO: 4-bit colour
+	// TODO: palette configuration
 
 	Video(DEV_VGA, RES_CGA, FORM_8BIT, Box);
 
@@ -52,7 +69,7 @@ int main()
 	// main loop
 	while (true)
 	{
-
-
+		// Reformat and copy from the DMA recipient raw data buffer
+		// (it chunks out 32-bits at a time)
 	}
 }
