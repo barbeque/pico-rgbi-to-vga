@@ -1,2 +1,4 @@
 *backups
+*.scad
+*.lck
 *.zip
