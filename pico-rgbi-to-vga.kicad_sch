@@ -5392,7 +5392,7 @@
 		(uuid "2890da7a-b21a-426f-94e8-236273ddf57c")
 	)
 	(label "HSYNC_IN"
-		(at 53.34 138.43 180)
+		(at 53.34 130.81 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5513,7 +5513,7 @@
 		(uuid "4bcd5ddb-1a77-4f54-9da9-3e14ad241598")
 	)
 	(label "GREEN_IN"
-		(at 53.34 133.35 180)
+		(at 53.34 138.43 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5557,7 +5557,7 @@
 		(uuid "5afa98e2-3b53-4079-93ff-ceb75432dd5a")
 	)
 	(label "VSYNC_IN"
-		(at 53.34 140.97 180)
+		(at 53.34 133.35 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5766,7 +5766,7 @@
 		(uuid "b6af7ccd-51b2-41f3-89e7-b525dd1a6dd6")
 	)
 	(label "RED_IN"
-		(at 53.34 130.81 180)
+		(at 53.34 135.89 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5821,7 +5821,7 @@
 		(uuid "c5a33604-5e4f-4020-81c5-7696d891ba99")
 	)
 	(label "BLUE_IN"
-		(at 53.34 135.89 180)
+		(at 53.34 140.97 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
