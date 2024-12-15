@@ -3595,6 +3595,10 @@
 		(uuid "04d44784-21ba-4af4-a79e-82da374747a6")
 	)
 	(no_connect
+		(at 151.13 100.33)
+		(uuid "2799444b-6ad2-4f12-bb7c-a3f96bfbe9e5")
+	)
+	(no_connect
 		(at 230.505 127.635)
 		(uuid "6d4cd1fb-1c8b-49c4-ba1b-f5cfe2e3c30d")
 	)
@@ -3621,6 +3625,10 @@
 	(no_connect
 		(at 234.95 137.795)
 		(uuid "888be520-bf7a-41a6-8442-def557a8a78d")
+	)
+	(no_connect
+		(at 156.21 100.33)
+		(uuid "9a5d520c-0ab4-4d53-a211-0ac9630aece7")
 	)
 	(no_connect
 		(at 171.45 54.61)
@@ -5270,16 +5278,15 @@
 		)
 		(uuid "9483faca-1aa1-4b95-aad8-9ba7ed27b849")
 	)
-	(text "TODO: oooooooh this isn't contiguous, is sync getting remapped onto like GPIO24"
+	(text "for logic analyzer"
 		(exclude_from_sim no)
-		(at 202.565 76.835 0)
+		(at 196.85 86.995 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
 		)
-		(uuid "dc5172c5-524a-4209-aabc-bfe2c3aa4959")
+		(uuid "df04bdbc-4d21-4875-b4ca-d0fb9a9d9426")
 	)
 	(label "PicoVGA_Blue1"
 		(at 131.445 69.85 180)
@@ -5578,6 +5585,17 @@
 		)
 		(uuid "5c159585-2a0d-4d46-bbd2-4f20612809da")
 	)
+	(label "INTENS_3v3"
+		(at 184.15 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "607ffecb-9942-4a7c-a837-208c63258289")
+	)
 	(label "HSYNC_IN"
 		(at 54.61 97.155 180)
 		(fields_autoplaced yes)
@@ -5677,6 +5695,39 @@
 		)
 		(uuid "82d584c4-1b4a-47bb-8217-96cfbd895eb7")
 	)
+	(label "RED_3v3"
+		(at 184.15 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a071616-75a4-48f9-a791-b768ea74dce4")
+	)
+	(label "BLUE_3v3"
+		(at 184.15 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "97509526-f3fd-4f51-9391-f51da16614b9")
+	)
+	(label "VSYNC_3v3"
+		(at 184.15 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "99085c17-6853-4b1a-8e79-0a36c2474084")
+	)
 	(label "HSYNC_3v3"
 		(at 131.445 62.23 180)
 		(fields_autoplaced yes)
@@ -5765,6 +5816,17 @@
 		)
 		(uuid "b6af7ccd-51b2-41f3-89e7-b525dd1a6dd6")
 	)
+	(label "HSYNC_3v3"
+		(at 184.15 80.01 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b79a0e0f-62ca-4866-9157-975b632ea52c")
+	)
 	(label "RED_IN"
 		(at 53.34 135.89 180)
 		(fields_autoplaced yes)
@@ -5830,6 +5892,17 @@
 			(justify right bottom)
 		)
 		(uuid "cd615965-5575-4b69-9d7e-e8702120c53c")
+	)
+	(label "GREEN_3v3"
+		(at 184.15 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d5c0adf5-8212-4b47-86c4-929b41993405")
 	)
 	(label "BLUE_OUT"
 		(at 245.11 30.48 0)
