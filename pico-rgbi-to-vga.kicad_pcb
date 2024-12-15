@@ -115,7 +115,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "pico-rgbi-v0.2")
+			(outputdirectory "pico-rgbi-v0.3")
 		)
 	)
 	(net 0 "")

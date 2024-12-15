@@ -637,7 +637,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "pico-rgbi-v0.3",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
